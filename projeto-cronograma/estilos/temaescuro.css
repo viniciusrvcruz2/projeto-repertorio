@@ -1,0 +1,28 @@
+html, body {
+    background-color: black;
+}
+
+header {
+    color: white;
+    background-color: black;
+    background-image: none;
+}
+
+nav, menu {
+    border: 1px solid white;
+}
+
+section a {
+    display: block;
+    background-color: black;
+    margin: 30px;
+    width: 280px;
+    padding: 25px;
+    border-radius: 15px;
+    border: 1px solid white;
+    text-decoration: none;
+    color: w;
+    font-family: 'Passion One';
+    font-size: 2em;
+    text-align: center;
+}

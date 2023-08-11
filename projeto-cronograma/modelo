@@ -1,0 +1,52 @@
+=========== HTML =======
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
+    <div class="adicionar-tempo-container">
+        <div class="adicionar-tempo">
+            <h1>Escolha o tempo em minutos</h1>
+            <button>30</button>
+            <button>45</button>
+            <button>60</button>
+            <button>120</button>
+        </div>
+    </div>
+
+    <!--<div class="tempo">
+                <span class="material-symbols-outlined timer">
+                    timer
+                    </span>
+            </div>-->
+
+==========  CSS ================
+
+    div.adicionar-tempo-container {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.712);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+div.adicionar-tempo {
+    background-color: var(--cor01);
+}
+
+div.tempo {
+    background-color: var(--cor03);
+    color: white;
+    display: flex;
+    /* alinhamento horizontal 
+    justify-content: center;
+    /* alinhamento vertical 
+    align-items: center;
+    border-radius: 10px;
+    padding: 2px 0px;
+}
+    

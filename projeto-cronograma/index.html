@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronograma</title>
+    <link rel="stylesheet" href="estilo/style.css">
+    <link rel="stylesheet" href="#" id="link"> 
+</head>
+<body>
+    <header>
+        <h1>Cronograma</h1>
+        <p>Cantem-lhe uma nova canção; toquem com habilidade ao aclamá-lo. Salmos 33:3</p>
+    </header>
+    <nav onclick="clickMenu()">
+        <img src="imagens/menu.png" alt="menu">
+    </nav>
+    <menu id="itens">
+        <ul>
+            <a href="../index.html">
+                <li>Repertório</li>
+            </a>
+            <a href="#">
+                <li>Inicio</li>
+            </a>
+            <a href="#" onclick="temaescuro()">
+                <li>Escuro</li>
+            </a>
+            <a href="#" onclick="temabranco()">
+                <li>Branco</li>
+            </a>
+            <a href="#" onclick="temanormal()">
+                <li>Normal</li>
+            </a>
+        </ul>
+    </menu>
+    <main>
+        <section>
+        <a href="https://relogioonline.com.br/cronometro/" target="_blank">Cronômetro</a>
+        <a href="exercicios.html">Exercícios</a>
+        <a href="https://www.youtube.com/playlist?list=PLwP6Qt8wHW0bbRWIJbkCspw3YlYE08fZe" target="_blank">Músicas para Tirar</a>
+        <a href="https://www.youtube.com/playlist?list=PL1ZdLDpEk8v3O5KMeEb8QQLB0dbLv6Cli" target="_blank">Teoria</a>
+        <a href="https://www.youtube.com/playlist?list=PLwP6Qt8wHW0b_7UZ3SVB_Ej2TIPrmy-EE" target="_blank">Backing track</a>
+        </section>
+    </main>
+
+    <script>
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            }
+
+            else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
+    <script src="javascript/script.js"></script>
+</body>
+</html>

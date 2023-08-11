@@ -1,0 +1,230 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+
+:root {
+    --cor01: #41A0DB;
+    --cor02: #87BFE1;
+    --cor03: #143244;
+    --cor04: #D9BBA0;
+}
+
+body {
+    background-color: var(--cor01);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div#cronograma1, div#cronograma2, div#cronograma3 {
+    display: none;
+    margin-bottom: 50px;
+}
+
+div.adicionar-tempo-container {
+    display: flex;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.712);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+div.adicionar-tempo {
+    background-color: white;
+    color: black;
+    width: 280px;
+    height: 310px;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+div.escolher-tempo {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    margin: 10px;
+}
+
+button.check {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 0px 5px 5px 0px;
+    box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.301);
+    color: black;
+    cursor: pointer;
+}
+
+input#tempo {
+    width: 80%;
+    border: 1px solid black;
+    border-radius: 5px 0px 0px 5px;
+    box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.301);
+    outline: none;
+}
+
+div.buttons {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+div.buttons > button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    font-size: 1.8em;
+    margin: 17px 4px;
+    padding: 20px 20px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.301);
+    color: black;
+    cursor: pointer;
+}
+
+div.tempo {
+    display: flex;
+    margin-top: 20px;
+    background-color: var(--cor03);
+    color: white;
+    /* alinhamento horizontal */
+    justify-content: center;
+    /* alinhamento vertical */
+    align-items: center;
+    padding: 4px 0px;
+    cursor: pointer;
+}
+
+section {
+    width: 282px;
+    padding: 10px 22px 22px;
+    background-color: var(--cor04);
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 0px 7px 16px black;
+}
+
+h1 {
+    font-size: 1.6em;
+    padding: 10px 0px;
+}
+
+h2 {
+    margin: 10px 0px;
+    font-size: 1.4em;
+}
+
+h2#pausa {
+    text-align: center;
+}
+
+label {
+    display: inline;
+    padding-left: 5px;
+    font-size: 1.1em;
+    user-select: none;
+    transform: translate(0px, -2px);
+}
+
+input[type="checkbox"] {
+    width: 17px;
+    height: 17px;
+    color: black;
+
+}
+
+p {
+    font-size: 1.1em;
+    padding: 2px;
+}
+
+div.container-exercicio {
+    display: flex;
+    margin: 10px 0px;
+    background-color: var(--cor04);
+    justify-content: left;
+    align-items: stretch;
+    border: 1px solid rgba(0, 0, 0, 0.473);
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+div.container-exercicio:hover {
+    background-color: #e4d3c4;
+}
+
+div.container-exercicio:hover div.tempo-tecnica, 
+div.container-exercicio:hover div.tempo-repertorio, 
+div.container-exercicio:hover div.tempo-harmonia {
+    background-color: #41A0DB;
+    border: 1px solid black;
+}
+
+div.tempo-tecnica, div.tempo-repertorio, div.tempo-harmonia {
+    display: flex;
+    background-color: #143244;
+    align-items: center;
+    padding: 4px;
+    color: white;
+    border-radius: 7px;
+}
+
+div.exercicio {
+    display: flex;
+    width: 100%;
+    margin-left: 5px;
+    align-items: center;
+}
+
+div.feito {
+    background-color: #b49b83;
+    text-decoration: line-through;
+}
+
+
+
+/*
+div p {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px 0px 3px 0px;
+}
+
+table {
+    margin: auto;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+    text-align: center;
+    background-color: var(--cor04);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+th {
+    border: 1px solid black;
+    padding: 10px;   
+}
+
+td {
+    border: 1px solid black;
+    padding: 10px;   
+}
+
+a img {
+    border-radius: 50%;
+    width: 70px;
+    transform: translate(70%, 100%);
+    position: fixed;
+}*/
